@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  <LinearLayout  
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/shophead"
+     android:padding="5dp"
+     android:gravity="center_vertical"
+     android:orientation="horizontal"
+     >  
+     <CheckBox          
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/shopcheckbox"/>
+     <TextView  
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/shopname"
+         android:layout_marginLeft="10dp"
+         />
+     <TextView  
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/goodcount"
+         android:layout_marginLeft="10dp"
+         />
+  </LinearLayout>
+  <LinearLayout  
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/shopgood"
+     android:orientation="horizontal">
+      <CheckBox          
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/goodcheckbox"/>
+     <LinearLayout 
+       android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <include layout="@layout/good_head"/>
+     </LinearLayout>
+  </LinearLayout>
+
+</FrameLayout>
